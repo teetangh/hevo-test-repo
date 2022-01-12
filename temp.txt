@@ -7,3 +7,7 @@ Sam
 Brad
 John
 Michael
+
+Creating myFeature branch off dev.
+and then merging myFeature onto dev and then 
+dev onto master
