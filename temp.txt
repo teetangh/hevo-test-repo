@@ -14,3 +14,7 @@ dev onto master
 
 
 stuff for cherry picking
+
+# Stuff for Squash and Merge
+
+Commit 1
