@@ -1,23 +1,29 @@
-package com.hevo.feignclient;
+package com.hevo.feignclient.client;
+
+import com.hevo.feignclient.dto.UserRecord;
 
 import feign.Headers;
 import feign.Param;
 import feign.RequestLine;
 
+// import feign client annotation
+
+
+@FeignClient(name = "user-record-client", url = "https://reqres.in/api/users")
 public interface UserRecordClient {
 
     @RequestLine("GET /users?page={page}&per_page={per_page}")
     UserRecord getUserRecord(@Param("page") int page, @Param("per_page") int per_page);
 
     @RequestLine("GET /users/{id}")
-    User getUser(@Param("id") int id);
+    UserRecord getUser(@Param("id") int id);
 
     @RequestLine("POST")
     @Headers("Content-Type: application/json")
-    User createUser(User user);
+    UserRecord createUser(UserRecord user);
 
     @RequestLine("PUT")
     @Headers("Content-Type: application/json")
-    User updateUser(User user);
+    UserRecord updateUser(UserRecord user);
 
 }

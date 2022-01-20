@@ -1,5 +1,8 @@
 package com.hevo.feignclient;
 
+import com.hevo.feignclient.dto.UserRecord;
+import com.hevo.feignclient.client.UserRecordClient;
+
 public class UserRecordClientImpl implements UserRecordClient {
 
     @Override
@@ -33,5 +36,8 @@ public class UserRecordClientImpl implements UserRecordClient {
         user.setAvatar("https://avatars0.githubusercontent.com/u/1234?v=3");
         userRecordClient.updateUser(user);
     }
+
+    // Member variables
+    private UserRecordClient userRecordClient;
 
 }

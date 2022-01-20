@@ -2,8 +2,8 @@ package com.hevo.feignclient;
 
 import java.util.logging.Logger;
 
-import com.hevo.feignclient.UserRecordClient;
 import com.hevo.feignclient.UserRecordClientImpl;
+import com.hevo.feignclient.client.UserRecordClient;
 
 import feign.Feign;
 import feign.gson.GsonDecoder;
