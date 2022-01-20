@@ -1,6 +1,6 @@
-package com.hevo.feignclient.client;
+package com.hevo.feignclientdemo.client;
 
-import com.hevo.feignclient.dto.UserRecord;
+import com.hevo.feignclientdemo.dto.UserRecord;
 
 import feign.Headers;
 import feign.Param;

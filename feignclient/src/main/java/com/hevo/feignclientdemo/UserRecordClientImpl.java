@@ -1,9 +1,12 @@
-package com.hevo.feignclient;
+package com.hevo.feignclientdemo;
 
-import com.hevo.feignclient.dto.UserRecord;
-import com.hevo.feignclient.client.UserRecordClient;
+import com.hevo.feignclientdemo.client.UserRecordClient;
+import com.hevo.feignclientdemo.dto.UserRecord;
 
 public class UserRecordClientImpl implements UserRecordClient {
+
+    // Member variables
+    private UserRecordClient userRecordClient;
 
     @Override
     public void getUserRecords() throws Exception {
@@ -37,7 +40,24 @@ public class UserRecordClientImpl implements UserRecordClient {
         userRecordClient.updateUser(user);
     }
 
-    // Member variables
-    private UserRecordClient userRecordClient;
+    // @Override
+    // public UserRecord getUserRecord(int page, int per_page) {
+    //     return userRecordClient.getUserRecord(page, per_page);
+    // }
+
+    // @Override
+    // public UserRecord getUser(int id) {
+    //     return userRecordClient.getUser(id);
+    // }
+
+    // @Override
+    // public UserRecord createUser(UserRecord user) {
+    //     return userRecordClient.createUser(user);
+    // }
+
+    // @Override
+    // public UserRecord updateUser(UserRecord user) {
+    //     return userRecordClient.updateUser(user);
+    // }
 
 }

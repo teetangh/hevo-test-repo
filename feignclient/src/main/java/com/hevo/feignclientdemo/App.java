@@ -1,9 +1,9 @@
-package com.hevo.feignclient;
+package com.hevo.feignclientdemo;
 
 import java.util.logging.Logger;
 
-import com.hevo.feignclient.UserRecordClientImpl;
-import com.hevo.feignclient.client.UserRecordClient;
+import com.hevo.feignclientdemo.UserRecordClientImpl;
+import com.hevo.feignclientdemo.client.UserRecordClient;
 
 import feign.Feign;
 import feign.gson.GsonDecoder;
@@ -16,7 +16,7 @@ public class App {
     public static void main(String[] args) {
         System.out.println("Hello World!");
 
-        public UserRecordClientImpl userRecordClient = Feign.builder()
+        final UserRecordClientImpl userRecordClient = Feign.builder()
                 .client(new OkHttpClient())
                 .encoder(new GsonEncoder())
                 .decoder(new GsonDecoder())
