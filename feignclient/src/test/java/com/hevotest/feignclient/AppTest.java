@@ -1,4 +1,4 @@
-package com.hevo.feignclient;
+package com.hevotest.feignclient;
 
 import static org.junit.Assert.assertTrue;
 
