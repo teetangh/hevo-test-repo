@@ -1,8 +1,8 @@
-package com.hevotest.feignclient;
+package com.hevodemo.feignclient;
 
-import com.hevotest.feignclient.*;
-import com.hevotest.feignclient.models.*;
-import com.hevotest.feignclient.clients.*;
+import com.hevodemo.feignclient.*;
+import com.hevodemo.feignclient.clients.*;
+import com.hevodemo.feignclient.models.*;
 
 // import static org.hamcrest.CoreMatchers.containsString;
 // import static org.hamcrest.CoreMatchers.is;

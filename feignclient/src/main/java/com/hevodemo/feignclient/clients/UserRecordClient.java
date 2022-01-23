@@ -1,10 +1,8 @@
-package com.hevotest.feignclient.clients;
+package com.hevodemo.feignclient.clients;
 
-import com.hevotest.feignclient.models.UserRecord;
-
-import com.hevotest.feignclient.models.Datum;
-import com.hevotest.feignclient.models.Support;
-import com.hevotest.feignclient.models.UserRecord;
+import com.hevodemo.feignclient.models.Datum;
+import com.hevodemo.feignclient.models.Support;
+import com.hevodemo.feignclient.models.UserRecord;
 
 import feign.Headers;
 import feign.Param;

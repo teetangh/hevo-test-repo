@@ -1,6 +1,6 @@
-package com.hevotest.feignclient;
+package com.hevodemo.feignclient;
 
-import com.hevotest.feignclient.clients.*;
+import com.hevodemo.feignclient.clients.*;
 
 import feign.Feign;
 import feign.Logger;

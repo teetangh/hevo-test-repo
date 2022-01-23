@@ -1,5 +1,5 @@
 
-package com.hevotest.feignclient.models;
+package com.hevodemo.feignclient.models;
 
 import java.util.List;
 
