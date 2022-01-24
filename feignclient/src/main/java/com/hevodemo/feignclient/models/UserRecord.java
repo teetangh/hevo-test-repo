@@ -14,11 +14,11 @@ import lombok.ToString;
 @AllArgsConstructor
 public class UserRecord {
 
-    private Integer page;
-    private Integer perPage;
-    private Integer total;
-    private Integer totalPages;
-    private List<Datum> data = null;
-    private Support support;
+     Integer page;
+     Integer perPage;
+     Integer total;
+     Integer totalPages;
+     List<Datum> data = null;
+     Support support;
 
 }

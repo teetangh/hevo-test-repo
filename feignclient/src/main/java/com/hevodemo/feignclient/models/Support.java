@@ -12,7 +12,7 @@ import lombok.ToString;
 @AllArgsConstructor
 public class Support {
 
-    private String url;
-    private String text;
+     String url;
+     String text;
 
 }

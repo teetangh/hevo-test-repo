@@ -12,10 +12,10 @@ import lombok.ToString;
 @AllArgsConstructor
 public class Datum {
 
-    private Integer id;
-    private String email;
-    private String firstName;
-    private String lastName;
-    private String avatar;
+     Integer id;
+     String email;
+     String firstName;
+     String lastName;
+     String avatar;
 
 }

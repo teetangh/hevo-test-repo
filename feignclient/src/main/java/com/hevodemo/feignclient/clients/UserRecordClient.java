@@ -10,7 +10,7 @@ import feign.RequestLine;
 
 public interface UserRecordClient {
 
-    @RequestLine("GET /users/{page}")
+    @RequestLine("GET /users?page={page}")
     UserRecord findByPage(@Param("page") Integer page);
 
     @RequestLine("GET /users")
