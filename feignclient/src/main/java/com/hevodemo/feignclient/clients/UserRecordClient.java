@@ -18,5 +18,5 @@ public interface UserRecordClient {
 
     @RequestLine("POST /users")
     @Headers("Content-Type: application/json")
-    void create(UserRecord userRecord);
+    UserRecord create(UserRecord userRecord);
 }

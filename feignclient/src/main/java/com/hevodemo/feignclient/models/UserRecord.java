@@ -5,13 +5,15 @@ import java.util.List;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.Setter;
 
 @Data
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 public class UserRecord {
 
      Integer page;
