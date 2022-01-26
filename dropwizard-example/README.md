@@ -1,6 +1,6 @@
-# HelloWorldApplication
+# HelloWorld
 
-How to start the HelloWorldApplication application
+How to start the HelloWorld application
 ---
 
 1. Run `mvn clean install` to build your application

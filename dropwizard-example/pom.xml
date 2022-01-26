@@ -11,13 +11,13 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>HelloWorldApplication</name>
+    <name>HelloWorld</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <dropwizard.version>2.1.0-beta.7</dropwizard.version>
-        <mainClass>com.example.helloworld.HelloWorldApplicationApplication</mainClass>
+        <mainClass>com.example.helloworld.HelloWorldApplication</mainClass>
     </properties>
 
     <dependencyManagement>
