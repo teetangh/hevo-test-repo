@@ -1,5 +1,12 @@
 package com.mycompany;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+
+import com.mycompany.core.DummyEventRepository;
+import com.mycompany.core.EventRepository;
+import com.mycompany.resources.EventResource;
+
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -21,9 +28,13 @@ public class EventsApplication extends Application<EventsConfiguration> {
     }
 
     @Override
-    public void run(final EventsConfiguration configuration,
-                    final Environment environment) {
-        // TODO: implement application
+    public void run(EventsConfiguration configuration, Environment environment) {
+        DateFormat eventDateFormat = new SimpleDateFormat(configuration.getDateFormat());
+        environment.getObjectMapper().setDateFormat(eventDateFormat);
+
+        EventRepository repository = new DummyEventRepository();
+        EventResource eventResource = new EventResource(repository);
+        environment.jersey().register(eventResource);
     }
 
 }

@@ -2,3 +2,7 @@ logging:
   level: INFO
   loggers:
     io.dropwizard: DEBUG
+
+server:
+  rootPath: /api/*
+dateFormat: yyyy-MM-dd'T'HH:mmZ
