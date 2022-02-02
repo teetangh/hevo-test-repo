@@ -10,7 +10,7 @@ public class HelloWorldConfiguration extends Configuration {
     // TODO: implement service configuration
 
     @NotEmpty
-    private String template;
+    private String template = "Hello";
 
     @NotEmpty
     private String defaultName = "Stranger";
