@@ -5,11 +5,11 @@ import java.text.SimpleDateFormat;
 
 import com.mycompany.auth.ExampleAuthenticator;
 import com.mycompany.auth.ExampleAuthorizer;
+import com.mycompany.auth.User;
 import com.mycompany.core.DummyEventRepository;
 import com.mycompany.core.EventRepository;
 import com.mycompany.resources.EventResource;
 
-import org.eclipse.jetty.server.Authentication.User;
 import org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature;
 
 import io.dropwizard.Application;
