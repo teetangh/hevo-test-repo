@@ -27,4 +27,12 @@ public class Event {
     private String location;
     private Date date;
 
+    public Object updateExceptId(Event event) {
+        this.name = event.getName();
+        this.description = event.getDescription();
+        this.location = event.getLocation();
+        this.date = event.getDate();
+        return this;
+    }
+
 }
