@@ -1,9 +1,9 @@
 package com.mycompany.resources;
 
-import java.util.Collections;
-import java.util.Date;
 import java.util.List;
 
+import javax.annotation.security.PermitAll;
+import javax.annotation.security.RolesAllowed;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -42,11 +42,13 @@ public class EventResource {
     // return Collections.singletonList(e);
     // }
 
+    @PermitAll
     @GET
     public List<Event> allEvents() {
         return repository.findAll();
     }
 
+    @RolesAllowed({ "ADMIN" })
     @GET
     @Path("{id}")
     public Event event(@PathParam("id") LongParam id) {
@@ -54,11 +56,13 @@ public class EventResource {
                 .orElseThrow(() -> new WebApplicationException("Event not found", 404));
     }
 
+    @RolesAllowed({ "ADMIN" })
     @POST
     public Event create(Event event) {
         return repository.save(event);
     }
 
+    @RolesAllowed({ "ADMIN" })
     @PUT
     @Path("{id}")
     public Event update(@PathParam("id") LongParam id, Event event) {
@@ -66,6 +70,7 @@ public class EventResource {
                 .orElseThrow(() -> new WebApplicationException("Event not found", 404));
     }
 
+    @RolesAllowed({ "ADMIN" })
     @DELETE
     @Path("{id}")
     public Response delete(@PathParam("id") LongParam id) {
